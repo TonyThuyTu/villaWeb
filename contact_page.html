@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="basic-info">
+            <div class="container basic-info-contact">
+                <p>Hotline: 1900 1234 | Email: villax@gmail.com</p>
+                <p>Location: An Bang, Hoi An, Da Nang</p>
+            </div>
+        </div>
+
+        <div class="container navbar">
+            <p class="navbar-logo">Villax</p>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <a href="home_page.html"><li>Home</li></a>
+                    <a href="./about_us_page.html"><li>About</li></a>
+
+                    <!-- DROPDOWN with Triangle -->
+                    <li class="dropdown" onclick="toggleDropdown(event)">
+                        <a href="javascript:void(0)">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Spa</a></li>
+                            <li><a href="#">Villa</a></li>
+                        </ul>
+                    </li>
+
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+                <button>Book Your Stay</button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Body -->
+    <div class="main-body">
+        <!-- banner -->
+        <div class="body-banner">
+            <img src="./scss/img/banner.png">
+            <p>Contact</p>
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+            <!-- title -->
+            <div class="main-content-title">
+                <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">Contact Us</span>
+                </div>
+                <h2>We're Here to<br>Welcome You Home</h2>
+            </div>
+        
+            <!-- content -->
+            <div class="content">
+                <div class="content-form">
+                    <form action="" class="form-contact">
+                        <p>Fill In The Inquiry Form</p>
+                        
+                        <div class="basic-input-contact">
+                            <input type="text" placeholder="Your Name">
+                            <input type="phone" placeholder="Your Phone Number">
+                        </div>
+
+                        <input type="email" placeholder="Your Email">
+                        <textarea class="text-message" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+
+                    <img src="./scss/img/pho-co-hoi-an-9865.png" alt="">
+                </div>
+
+                <div class="content-basic-contact">
+                    <div class="basic-contact">
+                        <div class="circle">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h5 class="basic-contact-text">Our Address</h5>
+                        <h5 class="basic-contact-info">An Bang, Hoi An, Da Nang</h5>
+                    </div>
+
+                    <div class="basic-contact">
+                        <div class="circle">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h5 class="basic-contact-text">Phone Number</h5>
+                        <h5 class="basic-contact-info">1900 1234</h5>
+                    </div>
+
+                    <div class="basic-contact">
+                        <div class="circle">
+                            <i class="fa-solid fa-at"></i>
+                        </div>
+                        <h5 class="basic-contact-text">Email</h5>
+                        <h5 class="basic-contact-info">villax@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-img">
+            <img src="./scss/img/img_footer.png" alt="">
+            <div class="quote-book">
+                <p>
+                    <span class="quote-mark">'</span>
+                    Reserve your escape to comfort and nature
+                    <span class="quote-mark">'</span>
+                </p>
+                <button class="move-to-book">
+                    <div class="main-book">
+                        <span class="book-text">Book Your Stay</span>
+                        <span class="book-arrow">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                    </div>
+                </button>
+            </div> 
+        </div>
+        
+        <div class="footer-info">
+            <div class="main-footer">
+                <!-- Intro -->
+                <div class="footer-col footer-intro">
+                    <h4>Villax</h4>
+                    <p>We provide premium services and unforgettable experiences. Quality, comfort, and trust are our priorities.</p>
+                    <div class="footer-basic-info">
+                        <p><strong>Phone: </strong>1900 1234</p>
+                        <p><strong>Email: </strong>villax@gmail.com</p>
+                        <p><strong>Address: </strong>An Bang, Hoi An, Da Nang</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer-col footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Villa</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Spa</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Payment -->
+                <div class="footer-col footer-nav">
+                    <h4>Payment</h4>
+                    <ul>
+                        <li><a href="#">Master Card</a></li>
+                        <li><a href="#">Visa</a></li>
+                        <li><a href="#">Domestic Bank</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social media -->
+                <div class="footer-col footer-nav">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facbook</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                © 2026 Villax. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+    function toggleMenu() {
+        const nav = document.getElementById('mainNav');
+        nav.classList.toggle('active');
+    }
+
+    // Toggle dropdown on mobile
+    function toggleDropdown(event) {
+        // Only apply on mobile
+        if (window.innerWidth <= 768) {
+            event.preventDefault();
+            event.stopPropagation();
+            const dropdown = event.currentTarget;
+            
+            // Close other dropdowns first
+            const allDropdowns = document.querySelectorAll('.dropdown');
+            allDropdowns.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+        }
+    }
+
+    // Close menu and dropdowns when clicking outside
+    document.addEventListener('click', function(event) {
+        const nav = document.getElementById('mainNav');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        // Close mobile menu if clicking outside
+        if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+            nav.classList.remove('active');
+            // Also close all dropdowns
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+
+    // Close dropdown when window is resized to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+
+    </script>
+</body>
+</html>

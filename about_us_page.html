@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/aboutUs.css">
+    <title>About Us</title>
+</head>
+<body>
+    
+    <!-- Header -->
+     <header>
+        <div class="basic-info">
+            <div class="container basic-info-contact">
+                <p>Hotline: 1900 1234 | Email: villax@gmail.com</p>
+                <p>Location: An Bang, Hoi An, Da Nang</p>
+            </div>
+        </div>
+
+        <div class="container navbar">
+            <p class="navbar-logo">Villax</p>
+            
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href="./about_us_page.html"><li>About</li></a>
+
+                    <li class="dropdown" onclick="toggleDropdown(event)">
+                        <a href="javascript:void(0)">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Spa</a></li>
+                            <li><a href="#">Villa</a></li>
+                        </ul>
+                    </li>
+
+                    <a href="./contact_page.html"><li>Contact</li></a>
+                </ul>
+                <button>Book Your Stay</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-body">
+        <!-- Banner -->
+        <div class="body-banner">
+            <img src="./scss/img/banner.png" alt="About Us Banner">
+            <p>About Us</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Title -->
+            <div class="main-content-title-about">
+
+                <div class="main-content-title">
+                    <div class="title-label">
+                        <span class="line"></span>
+                        <span class="label-text">About Us</span>
+                    </div>
+                    <h2>Designed for Comfort<br>Surrounded by Nature</h2>
+                </div>
+
+                <div class="about-text">
+                    <p>Donec finibus, urna bibendum ultricies laoreet, augue eros luctus sapien, ut euismod leo tortor ac enim. 
+                    In hac habitasse platea dictumst. Mauris sed posuere erat. Pellentesque volutpat sit amet. Sed tellus augue, 
+                    hendrerit eu rutrum in.</p>
+                </div>
+
+            </div>
+            
+
+            <!-- About Intro Section -->
+            <div class="about-intro">
+                <div class="about-images">
+                    <img class="about-images-1" src="./scss/img/about-us-1.png" alt="Villa Exterior" >
+                    <img class="about-images-2" src="./scss/img/about-us-2.png" alt="Villa Pool">
+                </div>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="why-choose-section">
+                <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">Why Choose Us</span>
+                </div>
+
+                <div class="why-choose-content">
+                    <div class="why-choose-left">
+                        <h3>Where Timeless Luxury<br>Feels Like Home</h3>
+                        <p>Where natural beauty meets modern comfort, offering you a stay that feels warm, private, and truly refreshing.</p>
+
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Exceptional Service</h4>
+                                    <p>Experience warm, attentive care with every detail handled to make your stay effortless and comfortable.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Stunning Locations</h4>
+                                    <p>Nestled in nature yet close to key attractions, offering the ideal balance of privacy and convenience.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-gem"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Luxury in Every Detail</h4>
+                                    <p>Enjoy stylish interiors, modern comforts, and spaces crafted for pure relaxation and unforgettable moments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-choose-right">
+                        <img src="./scss/img/about-us-3.png" alt="Interior Villa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-img">
+            <img src="./scss/img/img_footer.png" alt="Footer Background">
+            <div class="quote-book">
+                <p>
+                    <span class="quote-mark">'</span>
+                    Reserve your escape to comfort and nature
+                    <span class="quote-mark">'</span>
+                </p>
+                <button class="move-to-book">
+                    <div class="main-book">
+                        <span class="book-text">Book Your Stay</span>
+                        <span class="book-arrow">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="main-footer">
+                <div class="footer-col footer-intro">
+                    <h4>Villax</h4>
+                    <p>We provide premium services and unforgettable experiences. Quality, comfort, and trust are our priorities.</p>
+                    <div class="footer-basic-info">
+                        <p><strong>Phone: </strong>1900 1234</p>
+                        <p><strong>Email: </strong>villax@gmail.com</p>
+                        <p><strong>Address: </strong>An Bang, Hoi An, Da Nang</p>
+                    </div>
+                </div>
+
+                <div class="footer-col footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Villa</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Spa</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-nav">
+                    <h4>Payment</h4>
+                    <ul>
+                        <li><a href="#">Master Card</a></li>
+                        <li><a href="#">Visa</a></li>
+                        <li><a href="#">Domestic Bank</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-nav">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                © 2026 Villax. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+
+        function toggleDropdown(event) {
+            if (window.innerWidth <= 768) {
+                event.preventDefault();
+                event.stopPropagation();
+                const dropdown = event.currentTarget;
+                
+                const allDropdowns = document.querySelectorAll('.dropdown');
+                allDropdowns.forEach(d => {
+                    if (d !== dropdown) {
+                        d.classList.remove('active');
+                    }
+                });
+                
+                dropdown.classList.toggle('active');
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('mainNav');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+                nav.classList.remove('active');
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                const dropdowns = document.querySelectorAll('.dropdown');
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

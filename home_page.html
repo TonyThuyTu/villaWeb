@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/home.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="basic-info">
+            <div class="container basic-info-contact">
+                <p>Hotline: 1900 1234 | Email: villax@gmail.com</p>
+                <p>Location: An Bang, Hoi An, Da Nang</p>
+            </div>
+        </div>
+
+        <div class="container navbar">
+            <p class="navbar-logo">Villax</p>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href="./about_us_page.html"><li>About</li></a>
+
+                    <!-- DROPDOWN with Triangle -->
+                    <li class="dropdown" onclick="toggleDropdown(event)">
+                        <a href="javascript:void(0)">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Spa</a></li>
+                            <li><a href="#">Villa</a></li>
+                        </ul>
+                    </li>
+
+                    <a href="contact_page.html"><li>Contact</li></a>
+                </ul>
+                <button>Book Your Stay</button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Body -->
+    <div class="main-body">
+        <!-- banner -->
+        <div class="main-body-banner">
+
+            <div class="banner-description">
+
+                <div class="slide-numbers">
+                    <span class="slide-number active">1</span>
+                    <span class="slide-number">2</span>
+                    <span class="slide-number">3</span>
+                </div>
+                
+                <h1>Experience Luxury<br>in Nature</h1>
+                <hr>
+                <p class="tagline">Your Escape Begins Here</p>
+
+                <button class="move-to-book">
+                    <div class="main-book">
+                        <span class="book-text">Find Your Stay</span>
+                        <span class="book-arrow">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                    </div>
+                </button>
+
+            </div>
+
+            <div class="banner-img">
+                <img src="./scss/img/home-banner.png" alt="Luxury villa with pool">
+            </div>
+
+        </div>
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="main-layout">
+
+                <!-- LEFT -->
+                <div class="main-left">
+                <div class="main-content-title">
+                    <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">Welcome</span>
+                    </div>
+                    <h2>Luxury Living<br>Inspired By Nature</h2>
+                </div>
+
+                <div class="image-large">
+                    <img src="./scss/img/home-1.png" alt="Luxury Pool">
+                </div>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="main-right">
+                <div class="image-small">
+                    <img src="./scss/img/about-us-1.png" alt="Nature House">
+                </div>
+
+                <p>
+                    Donec finibus, urna bibendum ultricies laoreet, augue eros luctus 
+                    sapien, ut euismod leo tortor ac enim. In hac habitasse platea 
+                    dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit 
+                    amet. Sed tellus augue, hendrerit eu rutrum in.
+                </p>
+
+                <button class="move-to-book">
+                    <div class="main-book">
+                        <span class="book-text">More About Us</span>
+                        <span class="book-arrow">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                    </div>
+                </button>
+
+                </div>
+
+            </div>
+
+            <!-- Villa -->
+            <div class="main-content-villa">
+
+                <div class="main-content-title">
+                    <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">Villa</span>
+                    </div>
+                    <h2>Where Every Stay<br>Feel Special</h2>
+                </div>
+
+                <div class="villa-content">
+
+                    <div class="villa-content-img">
+                        <img src="./scss/img/home-villa.png" alt="">
+                    </div>
+
+                    <div class="villa-content-description">
+
+                        <div class="main-description">
+                            <h2>Where Nature Meets Luxury</h2>
+                            <p>
+                                Discover a retreat designed to bring together the calm of nature and the comfort of refined living. 
+                                Our villa is surrounded by lush greenery, golden light, and quiet outdoor spaces that let you slow down and breathe. 
+                                Inside, every detail—from the soft textures to the warm, earthy tones—is thoughtfully crafted to create a sense of 
+                                effortless luxury.
+                            </p>
+                        </div>
+
+                        <div class="second-description">
+                            <div class="quote-line"></div>
+                            <p>
+                                “Whether you're relaxing in your room, enjoying the view, or exploring the peaceful surroundings,
+                                you'll feel a perfect balance of tranquility and sophistication. With attentive service, modern
+                                amenities, and a setting that feels naturally beautiful, our villa offers an experience that is both
+                                refreshing and memorable. This is a place where comfort becomes natural, and nature feels luxurious.”
+                            </p>
+                        </div>
+
+                        <button class="move-to-book">
+                            <div class="main-book">
+                                <span class="book-text">Find More</span>
+                                <span class="book-arrow">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                            </div>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Restaurant -->
+            <div class="main-content-villa">
+
+                <div class="main-content-title">
+                    <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">SEA FOOD RESTAURANT</span>
+                    </div>
+                    <h2>Where Flavor<br>Meets Elegance</h2>
+                </div>
+
+                <div class="villa-content">
+
+                    
+
+                    <div class="villa-content-description">
+
+                        <div class="main-description">
+                            <h2>The Taste From Sea</h2>
+                            <p>
+                                Welcome to Tuyet Restaurant, a place where seafood is celebrated in its most authentic, natural form. 
+                                Our philosophy is simple: fresh catch, honest cooking, and unforgettable flavors. 
+                                We partner with trusted fishermen and sustainable farms to ensure every ingredient 
+                                on your plate reflects the true essence of the ocean.
+                            </p>
+                        </div>
+
+                        <div class="second-description">
+                            <div class="quote-line"></div>
+                            <p>
+                                “Enjoy hearty seafood platters, flame-grilled fish, and chef-crafted signature dishes in a warm, 
+                                inviting atmosphere inspired by coastal living. Whether you’re gathering with family, hosting friends, 
+                                or treating yourself to a well-deserved meal, we bring the spirit of the sea—and the comfort of home—into 
+                                every dining experience.”
+                            </p>
+                        </div>
+
+                        <button class="move-to-book">
+                            <div class="main-book">
+                                <span class="book-text">Find More</span>
+                                <span class="book-arrow">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <div class="villa-content-img">
+                        <img src="./scss/img/home-restaurant.png" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Spa -->
+                <div class="main-content-villa">
+
+                <div class="main-content-title">
+                    <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">SPA</span>
+                    </div>
+                    <h2>The Healing<br>Garden Spa</h2>
+                </div>
+
+                <div class="villa-content">
+
+                    <div class="villa-content-img">
+                        <img src="./scss/img/home-spa.jpg" alt="">
+                    </div>
+
+                    <div class="villa-content-description">
+
+                        <div class="main-description">
+                            <h2>Tranquil Essence Spa</h2>
+                            <p>
+                                At AquaBloom Wellness, we believe relaxation is an art. 
+                                Our spa blends modern therapeutic practices with holistic healing to create an atmosphere of complete rejuvenation. 
+                                Indulge in a collection of luxury treatments crafted by skilled therapists—from warm stone therapy and detoxifying 
+                                body scrubs to hydrating skincare rituals tailored uniquely for you.
+                            </p>
+                        </div>
+
+                        <div class="second-description">
+                            <div class="quote-line"></div>
+                            <p>
+                                “Surrounded by elegant design, soothing water elements, and a scent that calms the soul, every moment is curated to 
+                                help you unwind and rediscover your natural glow. Whether you’re seeking deep rest, radiant beauty, or a full-body reset, 
+                                AquaBloom brings you an experience where wellness blooms from within.”
+                            </p>
+                        </div>
+
+                        <button class="move-to-book">
+                            <div class="main-book">
+                                <span class="book-text">Find More</span>
+                                <span class="book-arrow">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- Our collection -->
+            
+            <div class="collection-content">
+                
+                <div class="main-content-title">
+                    <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">OUR COLLECTION</span>
+                    </div>
+                    <h2>Find Peace In Every Corner</h2>
+                </div>
+
+                <div class="img-collection">
+
+                    <div class="collection-left">
+
+                        <div class="small-item-collection">
+                            
+                            <img src="./scss/img/home-collection-2.png" alt="">
+
+                            <img src="./scss/img/home-collection-3.png" alt="">
+
+                        </div>
+
+                        <div class="img-item-collection">
+                            <img src="./scss/img/home-collection-4.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="collection-left">
+
+                        <div class="img-item-collection">
+                            <img src="./scss/img/home-collection-1.png" alt="">
+                        </div>
+
+                        <div class="small-item-collection">
+                            
+                            <img src="./scss/img/home-collection-5.png" alt="">
+
+                            <img src="./scss/img/home-collection-6.png" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Facilities -->
+
+            <div class="facilities">
+
+                <!-- <div class="facilities-bg"></div> -->
+
+                <div class="main-content-title">
+                    <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">FACILITIES AND AMENITIES</span>
+                    </div>
+                    <h2>Where Every Stay Feels Special</h2>
+                </div>
+
+                <div class="facilities-amenities">
+
+                    <div class="facilities-amenities-item">
+
+                        <i class="fa-solid fa-wifi"></i>
+
+                        <p>Internet Connection</p>
+
+                    </div>
+
+                    <div class="facilities-amenities-item">
+
+                        <i class="fa-solid fa-square-parking"></i>
+
+                        <p>Private Parking Space</p>
+
+                    </div>
+
+                    <div class="facilities-amenities-item">
+
+                        <i class="fa-solid fa-water-ladder"></i>
+
+                        <p>Swimming Pool</p>
+
+                    </div>
+
+                    <div class="facilities-amenities-item">
+
+                        <i class="fa-solid fa-bath"></i>
+
+                        <p>Private Bathtub &  Shower</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-img">
+            <img src="./scss/img/img_footer.png" alt="">
+            <div class="quote-book">
+                <p>
+                    <span class="quote-mark">'</span>
+                    Reserve your escape to comfort and nature
+                    <span class="quote-mark">'</span>
+                </p>
+                <button class="move-to-book">
+                    <div class="main-book">
+                        <span class="book-text">Book Your Stay</span>
+                        <span class="book-arrow">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                    </div>
+                </button>
+            </div> 
+        </div>
+        
+        <div class="footer-info">
+            <div class="main-footer">
+                <!-- Intro -->
+                <div class="footer-col footer-intro">
+                    <h4>Villax</h4>
+                    <p>We provide premium services and unforgettable experiences. Quality, comfort, and trust are our priorities.</p>
+                    <div class="footer-basic-info">
+                        <p><strong>Phone: </strong>1900 1234</p>
+                        <p><strong>Email: </strong>villax@gmail.com</p>
+                        <p><strong>Address: </strong>An Bang, Hoi An, Da Nang</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer-col footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Villa</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Spa</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Payment -->
+                <div class="footer-col footer-nav">
+                    <h4>Payment</h4>
+                    <ul>
+                        <li><a href="#">Master Card</a></li>
+                        <li><a href="#">Visa</a></li>
+                        <li><a href="#">Domestic Bank</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social media -->
+                <div class="footer-col footer-nav">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facbook</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                © 2026 Villax. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+    function toggleMenu() {
+        const nav = document.getElementById('mainNav');
+        nav.classList.toggle('active');
+    }
+
+    // Toggle dropdown on mobile
+    function toggleDropdown(event) {
+        // Only apply on mobile
+        if (window.innerWidth <= 768) {
+            event.preventDefault();
+            event.stopPropagation();
+            const dropdown = event.currentTarget;
+            
+            // Close other dropdowns first
+            const allDropdowns = document.querySelectorAll('.dropdown');
+            allDropdowns.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+        }
+    }
+
+    // Close menu and dropdowns when clicking outside
+    document.addEventListener('click', function(event) {
+        const nav = document.getElementById('mainNav');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        // Close mobile menu if clicking outside
+        if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+            nav.classList.remove('active');
+            // Also close all dropdowns
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+
+    // Close dropdown when window is resized to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+
+    </script>
+</body>
+</html>
