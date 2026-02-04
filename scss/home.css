@@ -174,35 +174,44 @@ header .navbar button {
 }
 
 /* banner */
+/* ================= BANNER LAYOUT ================= */
+
 .main-body-banner {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 500px;
-    background-color: whitesmoke;
-    gap: 60px;
+    align-items: stretch;
+    min-height: 500px;
+    background-color: #f5f5f5;
 }
+
+/* ================= LEFT CONTENT ================= */
 
 .banner-description {
-    flex: 1;
-    max-width: 540px;
     position: relative;
+    flex: 1;
+    background-color: #EBF3F5;
+    padding: 90px 120px 90px 140px;
 }
 
+/* ================= SLIDE NUMBERS ================= */
+
 .slide-numbers {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-bottom: 40px;
+    gap: 22px;
 }
 
 .slide-number {
-    font-size: 18px;
-    color: #ccc;
     position: relative;
-    padding-left: 30px;
+    font-size: 14px;
+    color: #aaa;
+    padding-left: 56px;
+    letter-spacing: 1px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .slide-number::before {
@@ -211,69 +220,109 @@ header .navbar button {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px;
+    width: 36px;
     height: 1px;
-    background-color: #ccc;
-    transition: all 0.3s;
+    background-color: #ddd;
+    transition: all 0.3s ease;
 }
 
 .slide-number.active {
-    color: #333;
+    color: #222;
+    font-weight: 500;
 }
 
 .slide-number.active::before {
-    width: 40px;
+    width: 48px;
     height: 2px;
-    background-color: #333;
+    background-color: #222;
 }
 
-.banner-description h1 {
+/* ================= TITLE ================= */
+
+.banner-title {
     font-size: 56px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.15;
+    margin: 0 0 28px;
     color: #1a1a1a;
-    margin: 0 0 20px 0;
     font-family: 'Georgia', serif;
 }
+
+/* HIGHLIGHT LUXURY */
+
+.text-highlight {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.text-highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 45%;
+    width: 100%;
+    height: 2px;
+    background-color: #2b6cb0;
+}
+
+/* ================= DIVIDER ================= */
+
+.title-divider {
+    width: 55%;
+    max-width: 300px;
+    border: none;
+    border-top: 1px solid #333;
+    margin: 26px 0 22px;
+}
+
+/* ================= TAGLINE ================= */
 
 .tagline {
-    font-size: 20px;
+    font-size: 18px;
     color: #666;
-    margin: 0 0 30px 0;
+    margin-bottom: 48px;
     font-family: 'Georgia', serif;
+    font-style: italic;
 }
 
+/* ================= IMAGE ================= */
 
 .banner-img {
     flex: 1;
-    max-width: 700px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    max-width: 800px;
+    height: 500px;
+    overflow: hidden;
 }
 
 .banner-img img {
-    width: 700px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-/* Responsive */
-/* @media (max-width: 968px) {
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
     .main-body-banner {
         flex-direction: column;
-        height: auto;
-        padding: 60px 40px;
     }
     
-    .banner-description h1 {
-        font-size: 42px;
+    .banner-description {
+        padding: 60px 40px;
+        max-width: 100%;
+    }
+    
+    .slide-numbers {
+        left: 20px;
     }
     
     .banner-img {
-        max-width: 100%;
+        width: 100%;
+        height: 400px;
     }
-} */
+}
 
 .main-content {
     max-width: 1200px;
