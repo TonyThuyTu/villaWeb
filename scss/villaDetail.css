@@ -295,6 +295,27 @@ header .navbar button {
 
 }
 
+.content .villa-text-detail .book-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .villa-text-detail .book-detail a {
+    text-decoration: none;
+    border: solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #008080;
+    font-family: 'Inter';
+    font-size: 14px;
+}
+
+.content .villa-text-detail .book-detail a:hover {
+    background-color: #006666;
+}
+
 .content .villa-text-detail h1 {
 
     margin-bottom: 20px;
