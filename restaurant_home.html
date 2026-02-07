@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/restaurant_home.css">
+    <link rel="shortcut icon" href="./scss/icon/favicon.png" type="image/x-icon">
+    <title>Tuyet Restaurant</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="basic-info">
+            <div class="container basic-info-contact">
+                <p>Hotline: 1900 1234 | Email: villax@gmail.com</p>
+                <p>Location: An Bang, Hoi An, Da Nang</p>
+            </div>
+        </div>
+
+        <div class="container navbar">
+            <p class="navbar-logo">Tuyet Restaurant</p>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About</li></a>
+
+                    <a href="#menu"><li>Menu</li></a>
+
+                    <!-- DROPDOWN with Triangle -->
+                    <!-- <li class="dropdown" onclick="toggleDropdown(event)">
+                        <a href="javascript:void(0)">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Spa</a></li>
+                            <li><a href="#">Villa</a></li>
+                        </ul>
+                    </li> -->
+
+                    <a href="#address"><li>Address</li></a>
+                </ul>
+                
+                <a class="book-table" href="#booktable">Book Your Table</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Body -->
+    <div class="main-body">
+        <!-- banner -->
+        <!-- <div class="body-banner">
+            <img src="./scss/img/banner.png">
+            <p>MASSAGE</p>
+        </div> -->
+
+        <div class="main-banner">
+
+            <img src="./scss/img/restaurant-banner-home.png" alt="">
+
+            <div class="banner-appointment">
+                <!-- <p class="welcome">Welcome to our</p> -->
+                <p class="therapy">THE WONDER OF THE OCEAN</p>
+                <p class="call-to-action">Where premium seafood meets the timeless beauty and depth of the ocean.</p>
+                <a href="#">VIEW MENU</a>
+            </div>
+
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+            <!-- title -->
+            <div class="main-content-title" id="home">
+                <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">TUYET RESTAURANT</span>
+                </div>
+                <h2>The Deep<br>Blue Experience</h2>
+            </div>
+        
+            <!-- content -->
+            <div class="content">
+                <div class="why-choose-us" >
+                    <div class="image-wrapper">
+                        <img src="./scss/img/seafood-restaurant.png" alt="Fresh Seafood">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <div class="reason">
+                        <div class="section-label">DISCOVER</div>
+                        <h2>OUR SEAFOOD</h2>
+                        <div class="title-underline"></div>
+                        
+                        <p>Fish markets range in size from small fish stalls,
+                        such as the one in the photo at the right, to the 
+                        great Tsukiji fish market in Tokyo, turning over 
+                        about 660,000 tonnes a year. The term can refer 
+                        to the process.</p>
+                        
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Our advantage -->
+                <div class="our-advantage">
+
+                    <div class="main-content-title" id="about">
+                        <div class="title-label">
+                            <span class="line"></span>
+                            <span class="label-text">OUR ADVANTAGES</span>
+                        </div>
+                        <h2>Professional care<br>in every detail</h2>
+                    </div>
+
+                    <!-- Section 1: Content Left, Image Right -->
+                    <div class="why-choose-section">
+                        <div class="why-choose-content">
+                            
+                            <div class="why-choose-left">
+                                <div class="section-badge">
+                                    <i class="fa-solid fa-utensils"></i>
+                                    <span>OUR ADVANTAGE</span>
+                                </div>
+                                
+                                <h3>Expert Chefs</h3>
+                                <div class="title-accent"></div>
+                                
+                                <p class="intro-text">Skilled chefs dedicated to freshness, flavor, and elegant presentation.</p>
+                            
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fa-solid fa-fish"></i>
+                                            <div class="icon-ripple"></div>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Fresh Ingredient Expertise</h4>
+                                            <p>Selecting and preparing only the finest, ocean-fresh 
+                                            seafood daily from trusted local suppliers.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fa-solid fa-fire-burner"></i>
+                                            <div class="icon-ripple"></div>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Culinary Mastery</h4>
+                                            <p>Blending classic techniques with modern refinement to create unforgettable dining experiences.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fa-solid fa-award"></i>
+                                            <div class="icon-ripple"></div>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Passion for Perfection</h4>
+                                            <p>Crafting every dish with precision, care, and creativity to delight your palate.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="chef-stats">
+                                    <div class="stat-item">
+                                        <h5>23+</h5>
+                                        <p>Years Experience</p>
+                                    </div>
+                                    <div class="stat-divider"></div>
+                                    <div class="stat-item">
+                                        <h5>90+</h5>
+                                        <p>Signature Dishes</p>
+                                    </div>
+                                    <div class="stat-divider"></div>
+                                    <div class="stat-item">
+                                        <h5>100%</h5>
+                                        <p>Fresh Seafood</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="why-choose-right">
+                                <div class="image-container">
+                                    <img src="./scss/img/chef.png" alt="Expert Chef">
+                                    <div class="image-frame"></div>
+                                    <div class="floating-badge">
+                                        <i class="fa-solid fa-crown"></i>
+                                        <span>Premium Quality</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Image Left, Content Right -->
+                    <div class="exceptional-service-section">
+                        <div class="why-choose-content reverse">
+                            
+                            <div class="why-choose-right">
+                                <div class="image-container">
+                                    <img src="./scss/img/seafoodcare.png" alt="Beachside Dining">
+                                    <div class="image-frame left"></div>
+                                    <div class="floating-badge left">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>Premium Service</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="why-choose-left">
+                                <div class="section-badge">
+                                    <i class="fa-solid fa-concierge-bell"></i>
+                                    <span>WHY CHOOSE US</span>
+                                </div>
+                                
+                                <h3>Exceptional Service</h3>
+                                <div class="title-accent"></div>
+                                
+                                <p class="intro-text">Refined hospitality delivered with care and attention to every detail.</p>
+                            
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fa-solid fa-user-tie"></i>
+                                            <div class="icon-ripple"></div>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Personalized Care</h4>
+                                            <p>Attentive service tailored to every guest's preferences and needs.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fa-solid fa-hand-holding-heart"></i>
+                                            <div class="icon-ripple"></div>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Professional Hospitality</h4>
+                                            <p>Seamless, warm, and refined service from arrival to departure.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fa-regular fa-face-smile-beam"></i>
+                                            <div class="icon-ripple"></div>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Effortless Experience</h4>
+                                            <p>Every detail handled with care and precision for your comfort.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Address -->
+                <div class="address-group">
+
+                    <div class="main-content-title" id="address">
+                        <div class="title-label">
+                            <span class="line"></span>
+                            <span class="label-text">OUR LOCATION</span>
+                        </div>
+                        <h2>Oceanfront At<br>An Bang Beach</h2>
+                    </div>
+
+                    <div class="location-section">
+                        <div class="location-container">
+                            
+                            <!-- Left Side: Images -->
+                            <div class="location-left">
+                                <div class="location-images">
+                                    <div class="location-image-item">
+                                        <img src="./scss/img/location-1.png" alt="Restaurant Dining">
+                                        <div class="image-overlay">
+                                            <span>Beachfront Dining</span>
+                                        </div>
+                                    </div>
+                                    <div class="location-image-item">
+                                        <img src="./scss/img/location-2.png" alt="Beach View">
+                                        <div class="image-overlay">
+                                            <span>Stunning Beach Views</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Side: Info & Map -->
+                            <div class="location-right">
+                                <div class="restaurant-info">
+                                    <div class="section-badge">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span>VISIT US</span>
+                                    </div>
+                                    
+                                    <h3>Turyet Restaurant</h3>
+                                    <div class="title-accent"></div>
+                                    
+                                    <div class="contact-details">
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fa-solid fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="contact-text">
+                                                <h4>Address</h4>
+                                                <p>Lo 3, An Bang Beach, Hoi An, Quang Nam</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </div>
+                                            <div class="contact-text">
+                                                <h4>Phone</h4>
+                                                <p>1900 1234</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fa-solid fa-clock"></i>
+                                            </div>
+                                            <div class="contact-text">
+                                                <h4>Opening Hours</h4>
+                                                <p>Daily: 10:00 AM - 10:00 PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="map-container">
+                                    <div class="map-wrapper">
+                                        <iframe 
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d217.01323673859673!2d108.3408801!3d15.9133178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420d1c87b86bf1%3A0xa8c9ab5e9e91d9ae!2zTmjDoCBow6BuZyBo4bqjaSBz4bqjbiBUdXnhur90IGJp4buDbiBBbiBCw6BuZw!5e1!3m2!1svi!2s!4v1770448823815!5m2!1svi!2s"
+                                            width="100%" 
+                                            height="100%" 
+                                            style="border:0;" 
+                                            allowfullscreen="" 
+                                            loading="lazy" 
+                                            referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                    
+                                    <a href="https://maps.app.goo.gl/mLiF4PiZsm72JDHp8" target="_blank" class="find-me-btn">
+                                        <span>Find Me Here</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="location-badges">
+                                    <div class="badge-item">
+                                        <i class="fa-solid fa-umbrella-beach"></i>
+                                        <span>Beachfront</span>
+                                    </div>
+                                    <div class="badge-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Free Parking</span>
+                                    </div>
+                                    <div class="badge-item">
+                                        <i class="fa-solid fa-wifi"></i>
+                                        <span>Free WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Form contact -->
+                <div class="form-contact">
+
+                    <div class="main-content-title" id="booktable">
+                        <div class="title-label">
+                            <span class="line"></span>
+                            <span class="label-text">BOOK YOUR TABLE</span>
+                        </div>
+                        <h2>Dine With Ocean Views<br>At An Bang Beach</h2>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <div class="contact-form-container">
+                            
+                            <!-- Left Side: Contact Form -->
+                            <div class="contact-form-left">
+                                <div class="section-badge">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>GET IN TOUCH</span>
+                                </div>
+                                
+                                <h3>Book Your Table</h3>
+                                <div class="title-accent"></div>
+                                
+                                <p class="intro-text">Have questions or want to make a reservation? We'd love to hear from you!</p>
+                                
+                                <form class="contact-form" id="contactForm">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            <i class="fa-solid fa-user"></i>
+                                            Your Name
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            id="name" 
+                                            name="name" 
+                                            placeholder="Enter your full name"
+                                            required
+                                        >
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="phone">
+                                            <i class="fa-solid fa-phone"></i>
+                                            Phone Number
+                                        </label>
+                                        <input 
+                                            type="tel" 
+                                            id="phone" 
+                                            name="phone" 
+                                            placeholder="Enter your phone number"
+                                            required
+                                        >
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="message">
+                                            <i class="fa-solid fa-message"></i>
+                                            Message
+                                        </label>
+                                        <textarea 
+                                            id="message" 
+                                            name="message" 
+                                            rows="5" 
+                                            placeholder="Tell us how we can help you... ex"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="submit-btn">
+                                        <span>Send Message</span>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                                
+                                <div class="contact-info-quick">
+                                    <div class="quick-contact-item">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                        <span>Call us: 1900 1234</span>
+                                    </div>
+                                    <div class="quick-contact-item">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>Open Daily: 10AM - 10PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Side: Image -->
+                            <div class="contact-form-right">
+                                <div class="contact-image-container">
+                                    <img src="./scss/img/contact-1.png" alt="Contact Turyet Restaurant">
+                                    <div class="image-overlay-gradient"></div>
+                                    <div class="contact-floating-card">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                        <p>"We're here to make your dining experience unforgettable"</p>
+                                        <span>- Tuyet Team</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    <!-- services price -->
+     
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            
+            <!-- Restaurant Logo/Name -->
+            <div class="footer-brand">
+                <h2>Turyet Restaurant</h2>
+                <p class="footer-tagline">Fresh Seafood, Unforgettable Moments</p>
+            </div>
+            
+            <!-- Footer Info -->
+            <div class="footer-info">
+                
+                <div class="footer-info-item">
+                    <div class="footer-icon">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                    </div>
+                    <div class="footer-text">
+                        <h4>Address</h4>
+                        <p>Lo 3, An Bang Beach, Hoi An, Quang Nam</p>
+                    </div>
+                </div>
+                
+                <div class="footer-info-item">
+                    <div class="footer-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="footer-text">
+                        <h4>Phone</h4>
+                        <p>1900 1234</p>
+                    </div>
+                </div>
+                
+                <div class="footer-info-item">
+                    <div class="footer-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="footer-text">
+                        <h4>Opening Hours</h4>
+                        <p>Daily: 10:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Social Media -->
+            <div class="footer-social">
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Turyet Restaurant. All rights reserved.</p>
+        </div>
+        
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
