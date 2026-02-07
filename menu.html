@@ -33,15 +33,6 @@
 
                     <a href="#menu"><li>Menu</li></a>
 
-                    <!-- DROPDOWN with Triangle -->
-                    <!-- <li class="dropdown" onclick="toggleDropdown(event)">
-                        <a href="javascript:void(0)">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Restaurant</a></li>
-                            <li><a href="#">Spa</a></li>
-                            <li><a href="#">Villa</a></li>
-                        </ul>
-                    </li> -->
 
                     <a href="restaurant_home.html"><li>Address</li></a>
                 </ul>
@@ -53,24 +44,8 @@
     
     <!-- Body -->
     <div class="main-body">
-        <!-- banner -->
-        <!-- <div class="body-banner">
-            <img src="./scss/img/banner.png">
-            <p>MASSAGE</p>
-        </div> -->
-
-        <div class="main-banner">
-
-            <img src="./scss/img/restaurant-banner-home.png" alt="">
-
-            <div class="banner-appointment">
-                <!-- <p class="welcome">Welcome to our</p> -->
-                <p class="therapy">THE WONDER OF THE OCEAN</p>
-                <p class="call-to-action">Where premium seafood meets the timeless beauty and depth of the ocean.</p>
-                <a href="#">VIEW MENU</a>
-            </div>
-
-        </div>
+        
+        
 
         <!-- main content -->
         <div class="main-content">
@@ -78,279 +53,463 @@
             <div class="main-content-title" id="home">
                 <div class="title-label">
                     <span class="line"></span>
-                    <span class="label-text">TUYET RESTAURANT</span>
+                    <span class="label-text">OUR MENU</span>
                 </div>
-                <h2>The Deep<br>Blue Experience</h2>
+                <h2>The Flavor<br>From Deep Sea</h2>
             </div>
         
             <!-- content -->
             <div class="content">
 
                 <section id="menu" class="menu-section">
-                    <div class="menu-container">
-                        
-                        <!-- Menu Header -->
-                        <div class="menu-header">
-                            <div class="section-badge">
-                                <i class="fa-solid fa-utensils"></i>
-                                <span>OUR MENU</span>
-                            </div>
-                            
-                            <h2>Discover Our Delicacies</h2>
-                            <div class="title-accent"></div>
-                            
-                            <p class="menu-intro">Fresh from the ocean to your plate. Experience the finest seafood cuisine crafted with passion and expertise.</p>
+                <div class="menu-container">
+                    
+                    <!-- Menu Header -->
+                    <div class="menu-header">
+                        <div class="section-badge">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>OUR MENU</span>
                         </div>
                         
-                        <!-- Menu Categories -->
-                        <div class="menu-categories">
-                            <button class="category-btn active" data-category="all">All Menu</button>
-                            <button class="category-btn" data-category="appetizers">Appetizers</button>
-                            <button class="category-btn" data-category="main">Main Courses</button>
-                            <button class="category-btn" data-category="grilled">Grilled Seafood</button>
-                            <button class="category-btn" data-category="special">Chef's Special</button>
-                            <button class="category-btn" data-category="drinks">Drinks</button>
-                        </div>
+                        <h2>Discover Our Delicacies</h2>
+                        <div class="title-accent"></div>
                         
-                        <!-- Menu Items Grid -->
-                        <div class="menu-grid">
-                            
-                            <!-- Appetizers -->
-                            <div class="menu-item" data-category="appetizers">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/oysters.jpg" alt="Fresh Oysters">
-                                    <div class="menu-badge">Fresh</div>
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Fresh Oysters</h3>
-                                        <span class="menu-price">$18</span>
-                                    </div>
-                                    <p class="menu-description">Half dozen fresh oysters served with lemon and mignonette sauce</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Gluten-free</span>
-                                        <span class="tag">Raw</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item" data-category="appetizers">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/calamari.jpg" alt="Crispy Calamari">
-                                    <div class="menu-badge">Popular</div>
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Crispy Calamari</h3>
-                                        <span class="menu-price">$15</span>
-                                    </div>
-                                    <p class="menu-description">Lightly breaded squid rings with spicy aioli dipping sauce</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Crispy</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item" data-category="appetizers">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/shrimp-cocktail.jpg" alt="Shrimp Cocktail">
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Shrimp Cocktail</h3>
-                                        <span class="menu-price">$16</span>
-                                    </div>
-                                    <p class="menu-description">Jumbo prawns served with classic cocktail sauce and lemon</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Classic</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Main Courses -->
-                            <div class="menu-item" data-category="main">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/grilled-salmon.jpg" alt="Grilled Salmon">
-                                    <div class="menu-badge best-seller">Best Seller</div>
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Grilled Atlantic Salmon</h3>
-                                        <span class="menu-price">$32</span>
-                                    </div>
-                                    <p class="menu-description">Fresh salmon fillet with herbs, served with vegetables and garlic mashed potatoes</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Healthy</span>
-                                        <span class="tag">Omega-3</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item" data-category="main">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/lobster-pasta.jpg" alt="Lobster Pasta">
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Lobster Linguine</h3>
-                                        <span class="menu-price">$45</span>
-                                    </div>
-                                    <p class="menu-description">Fresh lobster meat tossed with linguine in a creamy tomato sauce</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Premium</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item" data-category="main">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/seafood-paella.jpg" alt="Seafood Paella">
-                                    <div class="menu-badge">Popular</div>
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Seafood Paella</h3>
-                                        <span class="menu-price">$38</span>
-                                    </div>
-                                    <p class="menu-description">Traditional Spanish rice with mussels, shrimp, calamari, and saffron</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">For 2</span>
-                                        <span class="tag">Spanish</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Grilled Seafood -->
-                            <div class="menu-item" data-category="grilled">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/grilled-prawns.jpg" alt="Grilled Prawns">
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Grilled Tiger Prawns</h3>
-                                        <span class="menu-price">$35</span>
-                                    </div>
-                                    <p class="menu-description">Giant prawns grilled to perfection with garlic butter and herbs</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Grilled</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item" data-category="grilled">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/mixed-grill.jpg" alt="Mixed Seafood Grill">
-                                    <div class="menu-badge best-seller">Best Seller</div>
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Mixed Seafood Grill</h3>
-                                        <span class="menu-price">$42</span>
-                                    </div>
-                                    <p class="menu-description">Lobster, prawns, scallops, and fish grilled with lemon butter</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Premium</span>
-                                        <span class="tag">Grilled</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item" data-category="grilled">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/whole-fish.jpg" alt="Whole Grilled Fish">
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Whole Grilled Sea Bass</h3>
-                                        <span class="menu-price">$40</span>
-                                    </div>
-                                    <p class="menu-description">Whole sea bass grilled with Mediterranean herbs and olive oil</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Fresh Daily</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Chef's Special -->
-                            <div class="menu-item" data-category="special">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/seafood-platter.jpg" alt="Seafood Platter">
-                                    <div class="menu-badge special">Chef's Special</div>
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Royal Seafood Platter</h3>
-                                        <span class="menu-price">$85</span>
-                                    </div>
-                                    <p class="menu-description">Lobster, crab, oysters, prawns, mussels, and clams on ice</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">For 2-3</span>
-                                        <span class="tag">Signature</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item" data-category="special">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/bouillabaisse.jpg" alt="Bouillabaisse">
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Classic Bouillabaisse</h3>
-                                        <span class="menu-price">$38</span>
-                                    </div>
-                                    <p class="menu-description">Traditional French seafood stew with saffron and rouille</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">French</span>
-                                        <span class="tag">Soup</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Drinks -->
-                            <div class="menu-item" data-category="drinks">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/white-wine.jpg" alt="White Wine">
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Chardonnay</h3>
-                                        <span class="menu-price">$12/glass</span>
-                                    </div>
-                                    <p class="menu-description">Premium white wine, perfect pairing for seafood</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Wine</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item" data-category="drinks">
-                                <div class="menu-item-image">
-                                    <img src="./scss/img/cocktail.jpg" alt="Signature Cocktail">
-                                </div>
-                                <div class="menu-item-content">
-                                    <div class="menu-item-header">
-                                        <h3>Ocean Breeze Cocktail</h3>
-                                        <span class="menu-price">$14</span>
-                                    </div>
-                                    <p class="menu-description">Refreshing blend of vodka, blue curacao, and fresh lime</p>
-                                    <div class="menu-tags">
-                                        <span class="tag">Signature</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
+                        <p class="menu-intro">Fresh from the ocean to your plate. Experience the finest seafood cuisine crafted with passion and expertise.</p>
                     </div>
+                    
+                    <!-- Menu Categories -->
+                    <div class="menu-categories">
+                        <button class="category-btn active" data-category="set-1">Combo Set 1</button>
+                        <button class="category-btn" data-category="set-3">Combo Set 3</button>
+                        <button class="category-btn" data-category="set-4">Combo Set 4</button>
+                        <button class="category-btn" data-category="set-special">Combo Set special</button>
+                    </div>
+                    
+                    <!-- Menu Items Grid -->
+                    <div class="menu-grid">
+                        
+                            <!-- Combo Set 1 -->
+                            <div class="combo-card" data-category="set-1">
+                                <div class="combo-image-wrapper">
+                                    <img src="./scss/img/set-combo-1.jpg" alt="Set Menu 1" class="combo-image">
+                                    <div class="combo-overlay">
+                                        <h3>SET MENU 1</h3>
+                                        <p class="for-persons">For 2 Persons</p>
+                                    </div>
+                                </div>
+                                <div class="combo-details">
+                                    <ul class="dish-list">
+                                        <li>
+                                            <h4>SPRING ROLL (SPECIAL)</h4>
+                                            <p class="dish-name">Ram hải sản</p>
+                                            <p class="dish-translation">春卷（特色）스페셜 스프링롤</p>
+                                        </li>
+                                        <li>
+                                            <h4>SHRIMP FRIED WITH TAMARIND SAUCE</h4>
+                                            <p class="dish-name">Tôm rang me</p>
+                                            <p class="dish-translation">罗望子酱炒虾 타마린드 소스 새우볶음</p>
+                                        </li>
+                                        <li>
+                                            <h4>FRIED BABY SQUID WITH FISH SAUCE</h4>
+                                            <p class="dish-name">Mực chiên mắm</p>
+                                            <p class="dish-translation">鱼露炒小鱿鱼 액젓에 볶은 꼴뚜기</p>
+                                        </li>
+                                        <li>
+                                            <h4>GRILLED FISH BANANA LEAF</h4>
+                                            <p class="dish-name">Cá nướng lá chuối</p>
+                                            <p class="dish-translation">香蕉叶烤鱼 바나나잎에 구운 생선</p>
+                                        </li>
+                                        <li>
+                                            <h4>GRILLED CLAM</h4>
+                                            <p class="dish-name">Nghêu nướng</p>
+                                            <p class="dish-translation">烤蛤蜊 조개구이</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Combo Set Special -->
+                            <div class="combo-card" data-category="set-special" style="display: none;">
+                                <div class="combo-image-wrapper">
+                                    <img src="./scss/img/set-combo-2-1.jpg" alt="Set Menu 2" class="combo-image">
+                                    <div class="combo-overlay">
+                                        <h3>SET MENU SPECIAL</h3>
+                                        <p class="for-persons">For 2 Persons</p>
+                                    </div>
+                                </div>
+                                <div class="combo-details">
+                                    <ul class="dish-list">
+                                        <li>
+                                            <h4>1. SPRING ROLL (SPECIAL)</h4>
+                                            <p class="dish-name">Ram hải sản</p>
+                                            <p class="dish-translation">春卷（特色）스페셜 스프링롤</p>
+                                        </li>
+                                        <li>
+                                            <h4>2. SEA GRAPE SALAD SHRIMP</h4>
+                                            <p class="dish-name">Gỏi rong nho</p>
+                                            <p class="dish-translation">海葡萄虾沙拉 해포도 새우 샐러드</p>
+                                        </li>
+                                        <li>
+                                            <h4>3. GRILLED SHRIMP</h4>
+                                            <p class="dish-name">Tôm nướng</p>
+                                            <p class="dish-translation">烤虾 새우구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>4. GRILLED LOBSTER</h4>
+                                            <p class="dish-name">Tôm hùm nướng</p>
+                                            <p class="dish-translation">烤龙虾 랍스터 구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>5. GRILLED CLAM</h4>
+                                            <p class="dish-name">Nghêu nướng</p>
+                                            <p class="dish-translation">烤蛤蜊 조개구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>6. GRILLED OYSTER</h4>
+                                            <p class="dish-name">Hàu nướng</p>
+                                            <p class="dish-translation">烤生蚝 굴구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>7. GRILLED SCALLOP</h4>
+                                            <p class="dish-name">Điệp nướng</p>
+                                            <p class="dish-translation">烤扇贝 가리비 구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>8. GRILLED SCALL "MAY"</h4>
+                                            <p class="dish-name">Sò may nướng</p>
+                                            <p class="dish-translation">烤"五月"贝 "메이" 가리비 구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>9. STIR FRIED NOODLE/RICE WITH SEAFOOD</h4>
+                                            <p class="dish-name">Mỳ hoặc cơm xào hải sản</p>
+                                            <p class="dish-translation">海鲜炒面 / 炒饭 해물 볶음밥 / 볶음면</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Combo Set 3 -->
+                            <div class="combo-card" data-category="set-3" style="display: none;">
+                                <div class="combo-image-wrapper">
+                                    <img src="./scss/img/set-combo-3.jpg" alt="Set Menu 3" class="combo-image">
+                                    <div class="combo-overlay">
+                                        <h3>SET MENU 3</h3>
+                                        <p class="for-persons">For 2 Persons</p>
+                                    </div>
+                                </div>
+                                <div class="combo-details">
+                                    <ul class="dish-list">
+                                        <li>
+                                            <h4>1. STEAMED CRAB</h4>
+                                            <p class="dish-name">Cua hấp</p>
+                                            <p class="dish-translation">清蒸螃蟹 찐 게</p>
+                                        </li>
+                                        <li>
+                                            <h4>2. DEEP FIRED CALAMARI</h4>
+                                            <p class="dish-name">Mực chiên xù</p>
+                                            <p class="dish-translation">炸鱿鱼圈 오징어 튀김</p>
+                                        </li>
+                                        <li>
+                                            <h4>3. GRILLED CLAM</h4>
+                                            <p class="dish-name">Nghêu nướng</p>
+                                            <p class="dish-translation">烤蛤蜊 조개구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>4. SHRIMP WITH BUTTER IN GARLIC SAUCE</h4>
+                                            <p class="dish-name">Tôm sốt bơ tỏi</p>
+                                            <p class="dish-translation">蒜油黄油虾 버터 마늘 새우</p>
+                                        </li>
+                                        <li>
+                                            <h4>5. GRILLED OYSTER</h4>
+                                            <p class="dish-name">Hàu nướng</p>
+                                            <p class="dish-translation">烤生蚝 굴구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>6. GRILLED SCALLOP</h4>
+                                            <p class="dish-name">Điệp nướng</p>
+                                            <p class="dish-translation">烤扇贝 가리비 구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>7. MANGO SALAD</h4>
+                                            <p class="dish-name">Gỏi xoài</p>
+                                            <p class="dish-translation">芒果沙拉 망고 샐러드</p>
+                                        </li>
+                                        <li>
+                                            <h4>8. GRILLED BLOOD COCKLE</h4>
+                                            <p class="dish-name">Sò dương nướng</p>
+                                            <p class="dish-translation">烤血蛤 꼬막 구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>9. FRIED RICE/ SAUTEED NOODLE WITH SEAFOOD</h4>
+                                            <p class="dish-name">Cơm chiên/ Mỳ xào hải sản</p>
+                                            <p class="dish-translation">海鲜炒饭 / 炒面 해물 볶음밥 / 볶음면</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Combo Set 4 -->
+                            <div class="combo-card" data-category="set-4" style="display: none;">
+                                <div class="combo-image-wrapper">
+                                    <img src="./scss/img/set-combo-4.jpg" alt="Set Menu 4" class="combo-image">
+                                    <div class="combo-overlay">
+                                        <h3>SET MENU 4</h3>
+                                        <p class="for-persons">For 2 Persons</p>
+                                    </div>
+                                </div>
+                                <div class="combo-details">
+                                    <ul class="dish-list">
+                                        <li>
+                                            <h4>1. MANGO SALAD</h4>
+                                            <p class="dish-name">Gỏi xoài</p>
+                                            <p class="dish-translation">芒果沙拉 망고 샐러드</p>
+                                        </li>
+                                        <li>
+                                            <h4>2. CRAB FRIED WITH TAMARIND SAUCE</h4>
+                                            <p class="dish-name">Cua rang me</p>
+                                            <p class="dish-translation">罗望子酱炒蟹 타마린드 소스 게 볶음</p>
+                                        </li>
+                                        <li>
+                                            <h4>3. GRILLED SHRIMP</h4>
+                                            <p class="dish-name">Tôm nướng</p>
+                                            <p class="dish-translation">烤虾 새우구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>4. GRILLED SCALL "MAY"</h4>
+                                            <p class="dish-name">Sò may nướng</p>
+                                            <p class="dish-translation">烤"五月"贝 "메이" 가리비 구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>5. GRILLED OYSTER</h4>
+                                            <p class="dish-name">Hàu nướng</p>
+                                            <p class="dish-translation">烤生蚝 굴구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>6. GRILLED SCALLOP</h4>
+                                            <p class="dish-name">Điệp nướng</p>
+                                            <p class="dish-translation">烤扇贝 가리비 구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>7. GRILLED CLAM</h4>
+                                            <p class="dish-name">Nghêu nướng</p>
+                                            <p class="dish-translation">烤蛤蜊 조개구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>8. GRILLED SQUID</h4>
+                                            <p class="dish-name">Mực Lá Nướng</p>
+                                            <p class="dish-translation">烤鱿鱼 오징어구이</p>
+                                        </li>
+                                        <li>
+                                            <h4>9. FRIED RICE/ SAUTEED NOODLE WITH SEAFOOD</h4>
+                                            <p class="dish-name">Cơm chiên/ Mỳ xào hải sản</p>
+                                            <p class="dish-translation">海鲜炒饭 / 炒面 해물 볶음밥 / 볶음면</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                                
+                        </div>
                 </section>
 
+                
+                
             </div>
 
+            
     </div>
 
-    <!-- services price -->
-     
+                <div class="banner-brake">
+
+                    <img src="./scss/img/seafood-menu-banner-1.png" alt="">
+
+                </div>
+
+            <div class="main-content">
+
+
+                    <div class="bestseller-menu-section">
+                    <div class="bestseller-menu-container">
+                        
+                        <div class="bestseller-menu-header">
+                            <div class="section-badge">
+                                <i class="fa-solid fa-star"></i>
+                                <span>BEST SELLER MENU</span>
+                            </div>
+                            
+                            <h2>Popular Dishes</h2>
+                            <div class="title-accent"></div>
+                            
+                            <p class="menu-intro">Our most loved seafood selections</p>
+                        </div>
+                        
+                        <div class="bestseller-categories">
+                            <button class="bestseller-category-btn active" data-category="shrimp">
+                                <i class="fa-solid fa-shrimp"></i>
+                                <span>Shrimp</span>
+                            </button>
+                            <button class="bestseller-category-btn" data-category="lobster">
+                                <i class="fa-solid fa-shrimp"></i>
+                                <span>Lobster</span>
+                            </button>
+                            <button class="bestseller-category-btn" data-category="crab">
+                                <i class="fa-solid fa-stroopwafel"></i>
+                                <span>Crab</span>
+                            </button>
+                            <button class="bestseller-category-btn" data-category="grouper">
+                                <i class="fa-solid fa-fish"></i>
+                                <span>Grouper</span>
+                            </button>
+                        </div>
+                        
+                        <div class="bestseller-menu-display">
+                            
+                            <!-- SHRIMP -->
+                            <div class="bestseller-menu-card" data-category="shrimp">
+                                <div class="menu-card-header">
+                                    <h3>Shrimp Dishes</h3>
+                                    <p>Tôm • 虾 • 새우</p>
+                                </div>
+                                
+                                <div class="menu-card-grid">
+                                    <div class="menu-dish">
+                                        <h4>Steamed Shrimp with Lemongrass & Chili</h4>
+                                        <p class="dish-vietnamese">Tôm hấp sả ớt</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Steamed Shrimp with Beer</h4>
+                                        <p class="dish-vietnamese">Tôm hấp bia</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Grilled Shrimp</h4>
+                                        <p class="dish-vietnamese">Tôm nướng</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Sauteed Shrimp with Butter Garlic</h4>
+                                        <p class="dish-vietnamese">Tôm rang bơ tỏi</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Sauteed Shrimp with tarmarin sauce</h4>
+                                        <p class="dish-vietnamese">Tôm rang me</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Stir fried shrimp in sweet & sour sauce</h4>
+                                        <p class="dish-vietnamese">Tôm xào chua ngọt</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Deep fried shrimp</h4>
+                                        <p class="dish-vietnamese">Tôm chiên xù</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LOBSTER -->
+                            <div class="bestseller-menu-card" data-category="lobster" style="display: none;">
+                                <div class="menu-card-header">
+                                    <h3>Lobster Dishes</h3>
+                                    <p>Tôm Hùm • 龙虾 • 바닷가재</p>
+                                </div>
+                                
+                                <div class="menu-card-grid">
+                                    <div class="menu-dish">
+                                        <h4>Lobster</h4>
+                                        <p class="dish-vietnamese">Tôm hùm</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Giant Fresh Water Prawn</h4>
+                                        <p class="dish-vietnamese">Tôm càng thiên nhiên</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Red Tiger Prawns</h4>
+                                        <p class="dish-vietnamese">Tôm sú hổ thiên nhiên</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Mantis shrimp</h4>
+                                        <p class="dish-vietnamese">Tôm tít</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CRAB -->
+                            <div class="bestseller-menu-card" data-category="crab" style="display: none;">
+                                <div class="menu-card-header">
+                                    <h3>Crab Dishes</h3>
+                                    <p>Ghẹ • 螃蟹 • 게</p>
+                                </div>
+                                
+                                <div class="menu-card-grid">
+                                    <div class="menu-dish">
+                                        <h4>Steamed Crab</h4>
+                                        <p class="dish-vietnamese">Ghẹ hấp</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Grilled Crab</h4>
+                                        <p class="dish-vietnamese">Ghẹ nướng</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Sauteed Crab with Tamarind Sauce</h4>
+                                        <p class="dish-vietnamese">Ghẹ rang me</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Steam crab with coconut</h4>
+                                        <p class="dish-vietnamese">Ghẹ hấp nước dừa</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Steam crab with beer</h4>
+                                        <p class="dish-vietnamese">Ghẹ hấp nước bia</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Sauteed crab with salf</h4>
+                                        <p class="dish-vietnamese">Ghẹ rang muối</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- GROUPER -->
+                            <div class="bestseller-menu-card" data-category="grouper" style="display: none;">
+                                <div class="menu-card-header">
+                                    <h3>Grouper Dishes</h3>
+                                    <p>Cá Mú • 鱼 • 물고기</p>
+                                </div>
+                                
+                                <div class="menu-card-grid">
+                                    <div class="menu-dish">
+                                        <h4>Steamed Grouper</h4>
+                                        <p class="dish-vietnamese">Cá mú hấp</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Grilled Grouper</h4>
+                                        <p class="dish-vietnamese">Cá mú nướng</p>
+                                    </div>
+
+                                    <div class="menu-dish">
+                                        <h4>Grouper Sashimi</h4>
+                                        <p class="dish-vietnamese">Cá mú sashimi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
     <!-- Footer -->
     <footer class="footer-section">
@@ -424,6 +583,60 @@
 
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const comboCards = document.querySelectorAll('.combo-card');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get selected category
+                    const selectedCategory = this.getAttribute('data-category');
+                    
+                    // Hide all combo cards
+                    comboCards.forEach(card => {
+                        card.style.display = 'none';
+                    });
+                    
+                    // Show selected combo card
+                    const selectedCard = document.querySelector(`.combo-card[data-category="${selectedCategory}"]`);
+                    if (selectedCard) {
+                        selectedCard.style.display = 'block';
+                    }
+                });
+            });
+        });
+
+        // Individual Menu Category Switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.bestseller-category-btn');
+            const menuCards = document.querySelectorAll('.bestseller-menu-card');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const selectedCategory = this.getAttribute('data-category');
+                    
+                    menuCards.forEach(card => {
+                        card.style.display = 'none';
+                    });
+                    
+                    const selectedCard = document.querySelector(`.bestseller-menu-card[data-category="${selectedCategory}"]`);
+                    if (selectedCard) {
+                        selectedCard.style.display = 'block';
+                    }
+                });
+            });
+        });
+
     </script>
 
 </body>

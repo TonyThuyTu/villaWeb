@@ -299,11 +299,13 @@ header .navbar .book-table {
     max-width: 1200px;
     padding: 0 24px;
     margin: 0 auto;
+    
 }
 
 .main-content-title {
     max-width: 520px;
     margin: 10px 0 32px;
+    padding-top: 20px;
 }
 
 /* top label */
@@ -341,7 +343,7 @@ header .navbar .book-table {
 
 /* content */
 .menu-section {
-    padding: 80px 0;
+    padding: 20px 0;
     background: transparent;
     position: relative;
 }
@@ -453,130 +455,248 @@ header .navbar .book-table {
     box-shadow: 0 5px 20px rgba(1, 79, 134, 0.3);
 }
 
-/* Menu Grid */
+/* Menu Grid - Combo Cards */
 .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 600px;
 }
 
-/* Menu Item */
-.menu-item {
+.combo-card {
+    width: 100%;
+    max-width: 900px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(1, 79, 134, 0.1);
-    transition: all 0.4s ease;
-    border: 2px solid transparent;
+    box-shadow: 0 10px 40px rgba(1, 79, 134, 0.15);
+    animation: fadeIn 0.5s ease;
 }
 
-.menu-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(1, 79, 134, 0.2);
-    border-color: rgba(1, 79, 134, 0.1);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.menu-item-image {
+/* Combo Image Wrapper */
+.combo-image-wrapper {
     position: relative;
-    height: 250px;
+    width: 100%;
+    height: 400px;
     overflow: hidden;
+    background: linear-gradient(135deg, #014F86 0%, #0277BD 100%);
 }
 
-.menu-item-image img {
+.combo-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: transform 0.5s ease;
 }
 
-.menu-item:hover .menu-item-image img {
-    transform: scale(1.1);
+.combo-card:hover .combo-image {
+    transform: scale(1.05);
 }
 
-/* Menu Badge */
-.menu-badge {
+.combo-overlay {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 8px 16px;
-    background: linear-gradient(135deg, #014F86 0%, #0277BD 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(1, 79, 134, 0.4), rgba(1, 79, 134, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    border-radius: 50px;
+    padding: 20px;
+}
+
+.combo-overlay h3 {
     font-family: 'Habibi', serif;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 15px rgba(1, 79, 134, 0.4);
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.menu-badge.best-seller {
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-    color: #014F86;
-}
-
-.menu-badge.special {
-    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
-}
-
-/* Menu Content */
-.menu-item-content {
-    padding: 25px;
-}
-
-.menu-item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 12px;
-    gap: 15px;
-}
-
-.menu-item-header h3 {
-    font-family: 'Habibi', serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: #014F86;
-    line-height: 1.3;
-    flex: 1;
-}
-
-.menu-price {
-    font-family: 'Habibi', serif;
+.for-persons {
+    font-family: 'Inria Serif', serif;
     font-size: 24px;
-    font-weight: 700;
-    color: #014F86;
-    white-space: nowrap;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
-.menu-description {
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 15px;
-    color: #666;
-    line-height: 1.6;
+/* Combo Details */
+.combo-details {
+    padding: 40px;
+    background: white;
+}
+
+.dish-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dish-list li {
+    padding: 20px;
     margin-bottom: 15px;
+    background: linear-gradient(to right, rgba(1, 79, 134, 0.03), rgba(1, 79, 134, 0.01));
+    border-left: 4px solid #014F86;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-/* Menu Tags */
-.menu-tags {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+.dish-list li:hover {
+    background: linear-gradient(to right, rgba(1, 79, 134, 0.08), rgba(1, 79, 134, 0.03));
+    transform: translateX(5px);
+    box-shadow: 0 3px 15px rgba(1, 79, 134, 0.1);
 }
 
-.tag {
-    padding: 5px 12px;
-    background: rgba(1, 79, 134, 0.08);
-    border-radius: 20px;
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 12px;
+.dish-list li:last-child {
+    margin-bottom: 0;
+}
+
+.dish-list h4 {
+    font-family: 'Habibi', serif;
     color: #014F86;
-    font-weight: 600;
-    letter-spacing: 0.3px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/* Hidden items (for filtering) */
-.menu-item.hidden {
-    display: none;
+.dish-name {
+    font-family: 'Inria Serif', serif;
+    color: #0277BD;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.dish-translation {
+    font-family: 'Inria Serif', serif;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 0 20px;
+    }
+
+    .menu-header h2 {
+        font-size: 40px;
+    }
+
+    .menu-intro {
+        font-size: 16px;
+    }
+
+    .category-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .combo-image-wrapper {
+        height: 300px;
+    }
+
+    .combo-overlay h3 {
+        font-size: 36px;
+    }
+
+    .for-persons {
+        font-size: 18px;
+    }
+
+    .combo-details {
+        padding: 25px;
+    }
+
+    .dish-list li {
+        padding: 15px;
+    }
+
+    .dish-list h4 {
+        font-size: 16px;
+    }
+
+    .dish-name {
+        font-size: 15px;
+    }
+
+    .dish-translation {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-header h2 {
+        font-size: 32px;
+    }
+
+    .menu-header .section-badge {
+        font-size: 11px;
+        padding: 8px 20px;
+    }
+
+    .menu-categories {
+        gap: 10px;
+    }
+
+    .category-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .combo-image-wrapper {
+        height: 250px;
+    }
+
+    .combo-overlay h3 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .for-persons {
+        font-size: 16px;
+    }
+
+    .combo-details {
+        padding: 20px;
+    }
+
+    .dish-list li {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .dish-list h4 {
+        font-size: 14px;
+    }
+
+    .dish-name {
+        font-size: 14px;
+    }
+
+    .dish-translation {
+        font-size: 12px;
+    }
 }
 
 /* Responsive Design */
@@ -627,6 +747,218 @@ header .navbar .book-table {
     
     .menu-price {
         font-size: 20px;
+    }
+}
+
+/* banner brake */
+.banner-brake img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.bestseller-menu-section {
+    padding: 60px 0 80px;
+    background: linear-gradient(to bottom, rgba(1, 79, 134, 0.02), white);
+}
+
+.bestseller-menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.bestseller-menu-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bestseller-menu-header .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #014F86 0%, #0277BD 100%);
+    color: white;
+    border-radius: 50px;
+    font-family: 'Habibi', serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(1, 79, 134, 0.25);
+}
+
+.bestseller-menu-header h2 {
+    font-size: 56px;
+    font-family: 'Habibi', serif;
+    font-weight: 600;
+    color: #014F86;
+    margin-bottom: 20px;
+}
+
+.bestseller-menu-header .title-accent {
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(90deg, #014F86 0%, #0277BD 100%);
+    border-radius: 3px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.bestseller-menu-header .title-accent::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background: #014F86;
+    border-radius: 50%;
+}
+
+.bestseller-menu-header .menu-intro {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.bestseller-categories {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.bestseller-category-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: white;
+    border: 2px solid rgba(1, 79, 134, 0.2);
+    border-radius: 50px;
+    font-family: 'Habibi', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #014F86;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bestseller-category-btn i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.bestseller-category-btn:hover {
+    background: rgba(1, 79, 134, 0.05);
+    border-color: #014F86;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(1, 79, 134, 0.15);
+}
+
+.bestseller-category-btn.active {
+    background: linear-gradient(135deg, #014F86 0%, #0277BD 100%);
+    color: white;
+    border-color: #014F86;
+    box-shadow: 0 5px 25px rgba(1, 79, 134, 0.3);
+}
+
+.bestseller-menu-display {
+    min-height: 400px;
+}
+
+.bestseller-menu-card {
+    animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bestseller-menu-card .menu-card-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(1, 79, 134, 0.1);
+}
+
+.bestseller-menu-card .menu-card-header h3 {
+    font-family: 'Habibi', serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #014F86;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.bestseller-menu-card .menu-card-header p {
+    font-size: 16px;
+    color: #0277BD;
+    font-style: italic;
+}
+
+.bestseller-menu-card .menu-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.bestseller-menu-card .menu-dish {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    border-left: 4px solid #014F86;
+    box-shadow: 0 3px 15px rgba(1, 79, 134, 0.08);
+    transition: all 0.3s ease;
+}
+
+.bestseller-menu-card .menu-dish:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(1, 79, 134, 0.15);
+    border-left-width: 6px;
+}
+
+.bestseller-menu-card .menu-dish h4 {
+    font-family: 'Habibi', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #014F86;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.bestseller-menu-card .dish-vietnamese {
+    font-size: 16px;
+    color: #0277BD;
+    font-style: italic;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .demo-header h1 {
+        font-size: 36px;
+    }
+    
+    .bestseller-menu-header h2 {
+        font-size: 40px;
+    }
+    
+    .bestseller-menu-card .menu-card-grid {
+        grid-template-columns: 1fr;
     }
 }
 
