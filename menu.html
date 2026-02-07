@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/menu.css">
+    <link rel="shortcut icon" href="./scss/icon/favicon.png" type="image/x-icon">
+    <title>Menu Restaurant</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="basic-info">
+            <div class="container basic-info-contact">
+                <p>Hotline: 1900 1234 | Email: villax@gmail.com</p>
+                <p>Location: An Bang, Hoi An, Da Nang</p>
+            </div>
+        </div>
+
+        <div class="container navbar">
+            <p class="navbar-logo">Tuyet Restaurant</p>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <a href="restaurant_home.html"><li>Home</li></a>
+                    <a href="restaurant_home.html"><li>About</li></a>
+
+                    <a href="#menu"><li>Menu</li></a>
+
+                    <!-- DROPDOWN with Triangle -->
+                    <!-- <li class="dropdown" onclick="toggleDropdown(event)">
+                        <a href="javascript:void(0)">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Spa</a></li>
+                            <li><a href="#">Villa</a></li>
+                        </ul>
+                    </li> -->
+
+                    <a href="restaurant_home.html"><li>Address</li></a>
+                </ul>
+                
+                <a class="book-table" href="restaurant_home.html">Book Your Table</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Body -->
+    <div class="main-body">
+        <!-- banner -->
+        <!-- <div class="body-banner">
+            <img src="./scss/img/banner.png">
+            <p>MASSAGE</p>
+        </div> -->
+
+        <div class="main-banner">
+
+            <img src="./scss/img/restaurant-banner-home.png" alt="">
+
+            <div class="banner-appointment">
+                <!-- <p class="welcome">Welcome to our</p> -->
+                <p class="therapy">THE WONDER OF THE OCEAN</p>
+                <p class="call-to-action">Where premium seafood meets the timeless beauty and depth of the ocean.</p>
+                <a href="#">VIEW MENU</a>
+            </div>
+
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+            <!-- title -->
+            <div class="main-content-title" id="home">
+                <div class="title-label">
+                    <span class="line"></span>
+                    <span class="label-text">TUYET RESTAURANT</span>
+                </div>
+                <h2>The Deep<br>Blue Experience</h2>
+            </div>
+        
+            <!-- content -->
+            <div class="content">
+
+                <section id="menu" class="menu-section">
+                    <div class="menu-container">
+                        
+                        <!-- Menu Header -->
+                        <div class="menu-header">
+                            <div class="section-badge">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>OUR MENU</span>
+                            </div>
+                            
+                            <h2>Discover Our Delicacies</h2>
+                            <div class="title-accent"></div>
+                            
+                            <p class="menu-intro">Fresh from the ocean to your plate. Experience the finest seafood cuisine crafted with passion and expertise.</p>
+                        </div>
+                        
+                        <!-- Menu Categories -->
+                        <div class="menu-categories">
+                            <button class="category-btn active" data-category="all">All Menu</button>
+                            <button class="category-btn" data-category="appetizers">Appetizers</button>
+                            <button class="category-btn" data-category="main">Main Courses</button>
+                            <button class="category-btn" data-category="grilled">Grilled Seafood</button>
+                            <button class="category-btn" data-category="special">Chef's Special</button>
+                            <button class="category-btn" data-category="drinks">Drinks</button>
+                        </div>
+                        
+                        <!-- Menu Items Grid -->
+                        <div class="menu-grid">
+                            
+                            <!-- Appetizers -->
+                            <div class="menu-item" data-category="appetizers">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/oysters.jpg" alt="Fresh Oysters">
+                                    <div class="menu-badge">Fresh</div>
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Fresh Oysters</h3>
+                                        <span class="menu-price">$18</span>
+                                    </div>
+                                    <p class="menu-description">Half dozen fresh oysters served with lemon and mignonette sauce</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Gluten-free</span>
+                                        <span class="tag">Raw</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item" data-category="appetizers">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/calamari.jpg" alt="Crispy Calamari">
+                                    <div class="menu-badge">Popular</div>
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Crispy Calamari</h3>
+                                        <span class="menu-price">$15</span>
+                                    </div>
+                                    <p class="menu-description">Lightly breaded squid rings with spicy aioli dipping sauce</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Crispy</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item" data-category="appetizers">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/shrimp-cocktail.jpg" alt="Shrimp Cocktail">
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Shrimp Cocktail</h3>
+                                        <span class="menu-price">$16</span>
+                                    </div>
+                                    <p class="menu-description">Jumbo prawns served with classic cocktail sauce and lemon</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Classic</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Main Courses -->
+                            <div class="menu-item" data-category="main">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/grilled-salmon.jpg" alt="Grilled Salmon">
+                                    <div class="menu-badge best-seller">Best Seller</div>
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Grilled Atlantic Salmon</h3>
+                                        <span class="menu-price">$32</span>
+                                    </div>
+                                    <p class="menu-description">Fresh salmon fillet with herbs, served with vegetables and garlic mashed potatoes</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Healthy</span>
+                                        <span class="tag">Omega-3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item" data-category="main">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/lobster-pasta.jpg" alt="Lobster Pasta">
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Lobster Linguine</h3>
+                                        <span class="menu-price">$45</span>
+                                    </div>
+                                    <p class="menu-description">Fresh lobster meat tossed with linguine in a creamy tomato sauce</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Premium</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item" data-category="main">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/seafood-paella.jpg" alt="Seafood Paella">
+                                    <div class="menu-badge">Popular</div>
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Seafood Paella</h3>
+                                        <span class="menu-price">$38</span>
+                                    </div>
+                                    <p class="menu-description">Traditional Spanish rice with mussels, shrimp, calamari, and saffron</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">For 2</span>
+                                        <span class="tag">Spanish</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Grilled Seafood -->
+                            <div class="menu-item" data-category="grilled">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/grilled-prawns.jpg" alt="Grilled Prawns">
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Grilled Tiger Prawns</h3>
+                                        <span class="menu-price">$35</span>
+                                    </div>
+                                    <p class="menu-description">Giant prawns grilled to perfection with garlic butter and herbs</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Grilled</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item" data-category="grilled">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/mixed-grill.jpg" alt="Mixed Seafood Grill">
+                                    <div class="menu-badge best-seller">Best Seller</div>
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Mixed Seafood Grill</h3>
+                                        <span class="menu-price">$42</span>
+                                    </div>
+                                    <p class="menu-description">Lobster, prawns, scallops, and fish grilled with lemon butter</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Premium</span>
+                                        <span class="tag">Grilled</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item" data-category="grilled">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/whole-fish.jpg" alt="Whole Grilled Fish">
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Whole Grilled Sea Bass</h3>
+                                        <span class="menu-price">$40</span>
+                                    </div>
+                                    <p class="menu-description">Whole sea bass grilled with Mediterranean herbs and olive oil</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Fresh Daily</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Chef's Special -->
+                            <div class="menu-item" data-category="special">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/seafood-platter.jpg" alt="Seafood Platter">
+                                    <div class="menu-badge special">Chef's Special</div>
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Royal Seafood Platter</h3>
+                                        <span class="menu-price">$85</span>
+                                    </div>
+                                    <p class="menu-description">Lobster, crab, oysters, prawns, mussels, and clams on ice</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">For 2-3</span>
+                                        <span class="tag">Signature</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item" data-category="special">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/bouillabaisse.jpg" alt="Bouillabaisse">
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Classic Bouillabaisse</h3>
+                                        <span class="menu-price">$38</span>
+                                    </div>
+                                    <p class="menu-description">Traditional French seafood stew with saffron and rouille</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">French</span>
+                                        <span class="tag">Soup</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Drinks -->
+                            <div class="menu-item" data-category="drinks">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/white-wine.jpg" alt="White Wine">
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Chardonnay</h3>
+                                        <span class="menu-price">$12/glass</span>
+                                    </div>
+                                    <p class="menu-description">Premium white wine, perfect pairing for seafood</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Wine</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item" data-category="drinks">
+                                <div class="menu-item-image">
+                                    <img src="./scss/img/cocktail.jpg" alt="Signature Cocktail">
+                                </div>
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3>Ocean Breeze Cocktail</h3>
+                                        <span class="menu-price">$14</span>
+                                    </div>
+                                    <p class="menu-description">Refreshing blend of vodka, blue curacao, and fresh lime</p>
+                                    <div class="menu-tags">
+                                        <span class="tag">Signature</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+
+            </div>
+
+    </div>
+
+    <!-- services price -->
+     
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            
+            <!-- Restaurant Logo/Name -->
+            <div class="footer-brand">
+                <h2>Turyet Restaurant</h2>
+                <p class="footer-tagline">Fresh Seafood, Unforgettable Moments</p>
+            </div>
+            
+            <!-- Footer Info -->
+            <div class="footer-info">
+                
+                <div class="footer-info-item">
+                    <div class="footer-icon">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                    </div>
+                    <div class="footer-text">
+                        <h4>Address</h4>
+                        <p>Lo 3, An Bang Beach, Hoi An, Quang Nam</p>
+                    </div>
+                </div>
+                
+                <div class="footer-info-item">
+                    <div class="footer-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="footer-text">
+                        <h4>Phone</h4>
+                        <p>1900 1234</p>
+                    </div>
+                </div>
+                
+                <div class="footer-info-item">
+                    <div class="footer-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="footer-text">
+                        <h4>Opening Hours</h4>
+                        <p>Daily: 10:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Social Media -->
+            <div class="footer-social">
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Turyet Restaurant. All rights reserved.</p>
+        </div>
+        
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
